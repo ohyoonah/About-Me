@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Elice Digital Baeum",sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 프로필 */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+#profile {
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  padding: 20px 0;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+}
+
+#me {
+  width: 150px;
+  height: 180px;
+  border-radius: 30%;
+  border: 8px solid white;
+}
+
+#name {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+
+/* 메뉴 */
+nav {
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  /* border-bottom: 1px solid #E9E9E9; */
+  border: 1px solid #E9E9E9;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #8E8E8E;
+}
+
+
+/* 메인 */
+.contentsBox {
+  width: 100%;
+  background-color: #E9E9E9;
+  padding: 20px 0;
+}
+
+.contentsBox > div {
+  background-color: white;
+  width: 90%;
+  height: 150px;
+  margin: 0 auto 20px auto;
+  padding: 20px 30px;
+  box-shadow: 10px 5px 20px  #8E8E8E;
+}
+
+main .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 푸터 */
+footer {
+  padding: 25px;
+}
+
+footer .sns li {
+  padding: 0 20px;
+  float: right;
+}
+
+footer .sns li:not(:first-child) {
+  border-right: 1px solid #E9E9E9;
+}
+
+footer .sns li a {
+  font-size: 30px;
+}
+
+#copyright {
+  clear: both;
+  margin-top: 70px;
+  font-size: 12px;
+  text-align: center;
+  color: #8E8E8E;
+}

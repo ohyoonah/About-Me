@@ -5,6 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohyoonah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d86f326fcd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="profile">
+        <img id="me" src="./img/me.jpg" alt="프로필이미지" />
+        <p id="name">YOONAH OH</p>
+        <p id="job">FRONT-END DEVELOPER</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="menu" href="#information" onclick="colorChange()"
+              >information</a
+            >
+          </li>
+          <li><a class="menu" href="#goal">goal</a></li>
+          <li><a class="menu" href="#interest">interest</a></li>
+          <li><a class="menu" href="#expect">expect</a></li>
+          <li><a class="menu" href="#comment">comment</a></li>
+          <li><a class="menu" href="#keyword">keyword</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" id="main">
+      <div class="contentsBox">
+        <div id="information">
+          <p class="title">information</p>
+          <p class="contents">
+            오윤아 <br />
+            dhdbsdk33@gmail.com<br />
+            Seoul, Korea
+          </p>
+        </div>
+        <div id="goal">
+          <p class="title">goal</p>
+          <p class="contents">프론트엔드 개발자</p>
+        </div>
+        <div id="interest">
+          <p class="title">interest</p>
+          <p class="contents">
+            JavaScript<br />
+            Reack.js<br />
+            TypeScript
+          </p>
+        </div>
+        <div id="expect">
+          <p class="title">expect</p>
+          <p class="contents">
+            팀원들과 함께 프로젝트를 진행할 수 있다는 점이 가장 기대가 됩니다!
+          </p>
+        </div>
+        <div id="comment">
+          <p class="title">comment</p>
+          <p class="contents">남은 기간 후회 없이 불태워요 🔥</p>
+        </div>
+        <div id="keyword">
+          <p class="title">keyword</p>
+          <p class="contents"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul class="sns">
+        <li id="instargram">
+          <a href="https://www.instagram.com/y_oo__n___ah/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li id="blog">
+          <a href="#">
+            <i class="fa-solid fa-rss"></i>
+          </a>
+        </li>
+        <li id="github">
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p id="copyright">Copyright 2022. ohyoonah. all rights reserved.</p>
+    </footer>
+  </body>
 </html>
+
+<!-- 관심 직무 또는 앞으로의 목표 (웹 프론트엔드 개발자 / 인공지능 서비스 기획자 등)
+관심 분야 또는 기술 (React / Node 등)
+AI 트랙에서 가장 기대되는 점
+동료 레이서에게 하고 싶은 말
+취미, 특기, 좋아하는 음료, 최근에 본 영화 또는 책 등 나를 표현할 수 있는 정보 -->
