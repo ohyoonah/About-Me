@@ -5,9 +5,10 @@
 
 html, body {
   font-family: "Elice Digital Baeum",sans-serif;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
+
 
 ul {
   list-style: none;
@@ -18,16 +19,16 @@ ul li a {
   color: black;
 }
 
-/* 프로필 */
 header {
   width: 100%;
+  height: 400px;
   position: sticky;
   top: 0;
 }
 
+/* 프로필 */
 #profile {
   width: 100%;
-  height: 280px;
   text-align: center;
   padding: 20px 0;
   background-image: url(./img/background.jpg);
@@ -75,6 +76,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #8E8E8E;
+  transform: scale(2.0);
 }
 
 
@@ -82,22 +84,38 @@ nav ul li a:hover {
 .contentsBox {
   width: 100%;
   background-color: #E9E9E9;
-  padding: 20px 0;
+  padding-bottom: 30px;
 }
 
 .contentsBox > div {
   background-color: white;
-  width: 90%;
-  height: 150px;
-  margin: 0 auto 20px auto;
-  padding: 20px 30px;
-  box-shadow: 10px 5px 20px  #8E8E8E;
+  width: 80%;
+  height: 200px;
+  /* box-shadow: 10px 5px 20px  #8E8E8E; */
+  margin: -410px auto 75px auto;
+  padding: 410px 30px 40px 30px;
+  text-align: center;
 }
 
 main .title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+#information > .title {
+  margin-top: 15px;
+}
+
+.contents {
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
+.contents > img {
+  width: 25px;
+  margin-right: 10px;
+  padding-top: 5px;
 }
 
 /* 푸터 */
