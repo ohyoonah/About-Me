@@ -24,11 +24,13 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
+  display: none;
 }
+
+
 
 /* 메뉴 */
 nav {
-  
   width: 100%;
   height: 65px;
   line-height: 65px;
@@ -129,6 +131,7 @@ nav ul li a:hover {
   right: 2%;
   font-size: 40px;
   color: #8E8E8E;
+  display: none;
 }
 
 /* 푸터 */
@@ -155,4 +158,22 @@ footer .sns li a {
   font-size: 12px;
   text-align: center;
   color: #8E8E8E;
+}
+
+body > #welcome {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1rem;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 10px 5px 20px #8E8E8E;
 }
