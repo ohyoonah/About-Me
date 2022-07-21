@@ -26,7 +26,10 @@ function scroll(e) {
 
   window.scrollTo ({
       'behavior': 'smooth',
-      'top': target.offsetTop,
+      'top': target.offsetTop-200
+      // target.offsetTop에 -200을 붙여줌으로써 위치 이동시 꼭대기가 아닌 가운데에 맞춰짐
+      //css에서 margin,padding 수정 없이 이 부분에서 +,-로 위치 조정 가능
+      // position: sticky 사용시 문제 겪던 부분 해결
   });
 }
 

@@ -93,9 +93,8 @@ nav ul li a:hover {
   width: 80%;
   height: 250px;
   box-shadow: 10px 5px 20px  #8E8E8E;
-  /* margin: 0 auto 30px auto; */
-  margin: 0 auto 75px auto;
-  padding: 65px 0 ;
+  margin: 0 auto 40px auto;
+  padding: 30px 0 ;
   /* position: relative; */
 }
 
