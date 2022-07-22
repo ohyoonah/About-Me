@@ -5,8 +5,8 @@ const header = document.querySelector('header');
 
 setTimeout(() => {
   welcome.style.display = 'none';
-  header.style.display = 'block';
   up.style.display = 'block';
+  header.style.display = 'block';
 }, 4000);
 
 setTimeout(() => {
@@ -35,4 +35,47 @@ function scroll(e) {
 
 for(var i = 0; i < menu.length; i ++) {
     menu[i].onclick = scroll;
+}
+
+//박스 슬라이드
+var window_size = window.matchMedia('(max-width: 768px)');
+if(window_size.matches) {
+  tabletSize();
+  prev.style.display = 'block';
+  next.style.display = 'block';
+}
+
+// 자바스크립트에서 미디어쿼리 적용 시 별도 새로고침 없이 적용되는 코드
+// window.onresize = function(){
+//   document.location.reload();
+// };
+
+function tabletSize() {
+  var current = 0;
+  var contentsBox = document.querySelectorAll(".contentsBox > div");
+  var prev = document.getElementById('prev');
+  var next = document.getElementById('next');
+
+  box(current);
+  prev.onclick = prevSlide;
+  next.onclick = nextSlide;
+
+  function box(n) {
+    for(var i = 0; i < contentsBox.length; i++) {
+      contentsBox[i].style.display = "none";
+    }
+    contentsBox[n].style.display = 'block';
+  }
+
+  function prevSlide() {
+    if(current > 0) current -= 1;
+    else current = contentsBox.length - 1;
+    box(current);
+  }
+
+  function nextSlide() {
+    if(current < contentsBox.length - 1) current += 1;
+    else current = 0;
+    box(current);
+  }
 }

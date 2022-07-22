@@ -5,7 +5,7 @@
 
 html, body {
   font-family: "Elice Digital Baeum",sans-serif;
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
 }
 
@@ -45,10 +45,6 @@ nav ul {
   justify-content: space-around;
 }
 
-nav ul li {
-  margin-right: 30px;
-}
-
 nav ul li a {
   font-size: 1.1rem;
   font-weight: bold;
@@ -56,7 +52,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #8E8E8E;
-  transform: scale(2.0);
 }
 
 /* 프로필 */
@@ -124,12 +119,24 @@ nav ul li a:hover {
   padding-top: 5px;
 }
 
+#prev {
+  font-size: 40px;
+  left: 20;
+  display: none;
+}
+
+#next {
+  font-size: 40px;
+  right: 20;
+  display: none;
+}
+
 #up {
+  font-size: 40px;
+  color: #8E8E8E;
   position: fixed;
   bottom: 2%;
   right: 2%;
-  font-size: 40px;
-  color: #8E8E8E;
   display: none;
 }
 
@@ -175,4 +182,10 @@ body > #welcome {
   font-weight: bold;
   color: white;
   text-shadow: 10px 5px 20px #8E8E8E;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
 }
